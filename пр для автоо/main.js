@@ -1,8 +1,9 @@
-// "use strict"
+"use strict"
+
 // // ЭКРАННАЯ КЛАВИАТУРА 1 и 2
 
-// const keyboard = document.getElementById('keyboard');
-// const inputField = document.getElementById('inputField');
+// let keyboard = document.getElementById('keyboard');
+// let inputField = document.getElementById('inputField');
 // let capsLockEnabled = false;
 
 // function addToInput(value) {
@@ -13,26 +14,26 @@
 // }
 
 // for (let i = 1; i <= 9; i++) {
-//     const button = document.createElement('button');
+//     let button = document.createElement('button');
 //     button.textContent = i;
 //     button.addEventListener('click', () => addToInput(i));
 //     keyboard.appendChild(button);
 // }
 
-// const zeroButton = document.createElement('button');
+// let zeroButton = document.createElement('button');
 // zeroButton.textContent = '0';
 // zeroButton.addEventListener('click', () => addToInput('0'));
 // keyboard.appendChild(zeroButton);
 
-// const letters = 'abcdefghijklmnopqrstuvwxyz';
-// for (const letter of letters) {
-//     const button = document.createElement('button');
+// let letters = 'abcdefghijklmnopqrstuvwxyz';
+// for (let letter of letters) {
+//     let button = document.createElement('button');
 //     button.textContent = letter;
 //     button.addEventListener('click', () => addToInput(letter));
 //     keyboard.appendChild(button);
 // }
 
-// const capsLockButton = document.createElement('button');
+// let capsLockButton = document.createElement('button');
 // capsLockButton.textContent = 'Caps Lock';
 // capsLockButton.addEventListener('click', () => {
 //     capsLockEnabled = !capsLockEnabled;
@@ -157,24 +158,24 @@
 //     });
 //   }
 
-// 9 гороскоп
+// // 9 гороскоп
 
 // function getHoroscope() {
-//     const birthdate = document.getElementById('birthdate').value;
-//     const selectedDay = document.querySelector('input[name="day"]:checked').value;
+//     let birthdate = document.getElementById('birthdate').value;
+//     let  selectedDay = document.querySelector('input[name="day"]:checked').value;
    
   
 //     let horoscopeText = ''; 
   
    
-//     const horoscopes = [
+//     let horoscopes = [
 //       'Сегодня будет удачный день для новых начинаний.',
 //       'Ваша энергия сегодня будет на высоте, не упустите возможность сделать что-то важное.',
 //       'Будьте осторожны с финансами сегодня, возможны непредвиденные расходы.'
 //     ];
 //     horoscopeText = horoscopes[Math.floor(Math.random() * horoscopes.length)];
   
-//     const horoscopeDisplay = document.getElementById('horoscope');
+//     let horoscopeDisplay = document.getElementById('horoscope');
 //     horoscopeDisplay.textContent = horoscopeText;
 //   }
 
@@ -185,24 +186,24 @@
 // let timer;
 // let isPredictionStopped = false;
 // function startPrediction() {
-//   const timerDisplay = document.getElementById('timer');
+//   let timerDisplay = document.getElementById('timer');
 //   timer = setInterval(function() {
-//     const randomNumber = Math.floor(Math.random() * 10) + 1;
+//     let randomNumber = Math.floor(Math.random() * 10) + 1;
 //     timerDisplay.textContent = randomNumber;
 //   }, 100);
 // }
 // function stopPrediction() {
 //   clearInterval(timer);
-//   const predictionButton = document.getElementById('stop');
+//   let predictionButton = document.getElementById('stop');
 //   predictionButton.classList.remove('active');
 //   isPredictionStopped = true;
-//   const predictionNumber = document.getElementById('timer').textContent;
-//   const predictionText = document.getElementById('text');
+//   let predictionNumber = document.getElementById('timer').textContent;
+//   let predictionText = document.getElementById('text');
 //   if (predictionNumber % 2 === 0) {
-//     predictionText.textContent = 'Ваше предсказание: все супер';
+//     predictionText.textContent = ' все хорошо';
 //     predictionText.style.color = 'green';
 //   } else {
-//     predictionText.textContent = 'Ваше предсказание: треш какой-то';
+//     predictionText.textContent = 'все плохо';
 //     predictionText.style.color = 'red';
 //   }
 // }
